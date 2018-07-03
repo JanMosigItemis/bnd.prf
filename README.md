@@ -1,5 +1,5 @@
 # bnd.prf
-Demo repo containing a showcase for the "bnd PRF bug"
+Demo repo containing a showcase for the bug https://github.com/bndtools/bnd/issues/2511.
 
 * Clone
 * Open Eclipse Photon (bndtools 3.5.0.REL + Groovy 3.0.0 SNAPSHOT installed)
