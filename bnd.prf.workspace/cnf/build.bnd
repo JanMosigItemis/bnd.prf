@@ -1,0 +1,22 @@
+-plugin.4.Bndtools-Hub: \
+    aQute.bnd.deployer.repository.FixedIndexedRepo; \
+        name=Bndtools-Hub; \
+        locations=https://raw.githubusercontent.com/bndtools/bundle-hub/master/index.xml.gz; \
+        cache = ${build}/cache/Bndtools-Hub
+        
+# Configure Repositories
+-plugin.1.Central: \
+	aQute.bnd.deployer.repository.wrapper.Plugin; \
+		location = "${build}/cache/wrapper"; \
+		reindex = true, \
+	aQute.bnd.jpm.Repository; \
+		includeStaged = true; \
+		name = Central; \
+		location = ~/.bnd/shacache; \
+		index = ${build}/central.json
+
+-releaserepo: Release
+-baselinerepo: Release
+
+# JUnit
+junit: org.apache.servicemix.bundles.junit; version=4.12
