@@ -238,3 +238,5 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 
 /cache/
+/bin_test/
+/generated/
