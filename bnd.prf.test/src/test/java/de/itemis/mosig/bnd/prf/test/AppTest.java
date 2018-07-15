@@ -13,8 +13,8 @@ public class AppTest {
 
 	@Test
 	public void testApp() throws Exception {
-		int maxKeyLen = Cipher.getMaxAllowedKeyLength("AES");
-	    System.out.println(maxKeyLen);
-        KeyGenerator.getInstance("SunTls12Prf");
-    }
+	    int maxKeyLen = Cipher.getMaxAllowedKeyLength("AES");
+	    System.out.println("Max AES Keylength: " + maxKeyLen + " --> " + (maxKeyLen > 128 ? "Unlimited " : "Limited ") + "Security.");
+            KeyGenerator.getInstance("SunTls12Prf");
+        }
 }
