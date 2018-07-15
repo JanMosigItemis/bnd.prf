@@ -1,6 +1,5 @@
 package de.itemis.mosig.bnd.prf.test;
 
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 
@@ -14,7 +13,7 @@ public class AppTest {
 	@Test
 	public void testApp() throws Exception {
 		int maxKeyLen = Cipher.getMaxAllowedKeyLength("AES");
-	    System.out.println(maxKeyLen);
+	    System.out.println("Max AES Keylength: " + maxKeyLen + " --> " + (mayKeyLen > 128 ? "Unlimited " : "Limited ") + "Security.");
         KeyGenerator.getInstance("SunTls12Prf");
     }
 }
