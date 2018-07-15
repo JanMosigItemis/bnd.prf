@@ -19,4 +19,4 @@
 -baselinerepo: Release
 
 # JUnit
-junit: org.apache.servicemix.bundles.junit; version=4.12
+junit: org.apache.servicemix.bundles.junit; version=4.11
